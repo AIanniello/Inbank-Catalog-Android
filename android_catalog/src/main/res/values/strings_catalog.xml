@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="catalog_buttons_ab_title">Catalog Buttons</string>
+    <string name="text_input_ab_title">Text Input</string>
+    <string name="text_styles">Text Styles</string>
+    <string name="layouts_login">Layouts login</string>
+    <string name="flusso_primo_login">Flusso primo login</string>
+    <string name="welcome_activity_tutorial">Welcome activity (tutorial)</string>
+    <string name="alertdialog_due_azioni">AlertDialog due azioni</string>
+    <string name="disable_pin">Disable PIN</string>
+    <string name="disable_fingerprint">Disable fingerprint</string>
+
+
+    <!-- region Typography-->
+    <string name="typography_chars">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>abcdefghijklmnopqrstuvwxyz<br/>0123456789 ! ? &amp; / ( ) € $ £ ¥ ¢ = @ ; : , .</string>
+    <string name="typography_text" comment="Typography: testo a cui si applicano i vari stili">The quick brown fox jumps over the lazy dog</string>
+    <string name="typography_button_normal">Normal</string>
+    <string name="typography_button_positive">Positive</string>
+    <string name="typography_button_negative">Negative</string>
+    <string name="typography_button_reverse">Reverse</string>
+    <string name="typography_dimension">Typography %1$s</string>
+    <string name="typography_xl">XL</string>
+    <string name="typography_l">L</string>
+    <string name="typography_m">M</string>
+    <string name="typography_s">S</string>
+    <string name="typography_ab_title">Typography</string>
+    <string name="typography_regular">Regular</string>
+    <string name="typography_medium">Medium</string>
+    <string name="typography_regular_bold">Regular Bold</string>
+
+    <string name="h1" comment="Typography: titolo gruppo h1">H1</string>
+    <string name="h2" comment="Typography: titolo gruppo h2">H2</string>
+    <string name="h3" comment="Typography: titolo gruppo h3">H3</string>
+    <string name="h4" comment="Typography: titolo gruppo h4">H4</string>
+    <string name="h5" comment="Typography: titolo gruppo h5">H5</string>
+    <string name="h6" comment="Typography: titolo gruppo h6">H6</string>
+    <string name="subtitle_1" comment="Typography: titolo gruppo subtitle 1">Subtitle 1</string>
+    <string name="subtitle_2" comment="Typography: titolo gruppo subtitle 2">Subtitle 2</string>
+    <string name="body_1" comment="Typography: titolo gruppo body 1">Body 1</string>
+    <string name="body_2" comment="Typography: titolo gruppo body 2">Body 2</string>
+    <string name="button" comment="Typography: titolo gruppo button">Button</string>
+    <string name="caption" comment="Typography: titolo gruppo caption">Caption</string>
+    <string name="overline" comment="Typography: titolo gruppo overline">Overline</string>
+
+    <!-- endregion-->
+
+    <!-- region Palette-->
+    <string name="palette_reverse_colors">Reverse colors</string>
+    <string name="palette_generic_colors">Generic colors</string>
+    <string name="palette_states_colors">States colors</string>
+    <string name="palette_gray_tones">Gray tones</string>
+    <string name="palette_brand_color">Brand Color</string>
+    <string name="palette_ab_title">Palette</string>
+    <!-- endregion-->
+
+
+    <!-- region IL03 -->
+    <string name="inbank_access_help_title">Accesso a Inbank app</string>
+    <!-- endregion -->
+
+
+
+    <string name="catalog_buttons_alert_dialog">Open dialog</string>
+    <string name="catalog_buttons_alert_dialog2">Dialog Feedback</string>
+    <string name="catalog_buttons_alert_dialog3">old wrong dialog</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae convallis ipsum. Curabitur euismod, purus a eleifend volutpat, diam ligula suscipit massa, non pretium eros ex vel turpis. Sed id eros iaculis, cursus nunc sed, vestibulum felis. Donec rhoncus dolor id justo iaculis, ut fermentum quam congue. Curabitur sed eros id risus dapibus volutpat. Nam at velit commodo, sagittis lorem non, varius augue. Cras at congue eros, ac venenatis tellus. Fusce dignissim mi ac eros finibus aliquet. Curabitur a auctor turpis. Sed eget ultricies leo.</string>
+
+
+
+</resources>

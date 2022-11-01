@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    app:startDestination="@id/loginIL01A">
+
+    <fragment
+        android:id="@+id/loginIL01A"
+        android:name="com.inbank.android_catalog.catalog.login.Login01AFragment"
+        android:label="fragment_title_screen"
+        tools:layout="@layout/fragment_il01a">
+
+        <action
+            android:id="@+id/action_loginIL01A_to_loginIL00A1"
+            app:destination="@id/loginIL00A1" />
+        <action
+            android:id="@+id/action_loginIL01A_to_loginIL00B1"
+            app:destination="@id/loginIL00B1" />
+        <action
+            android:id="@+id/action_loginIL01A_to_loginIL00C1"
+            app:destination="@id/loginIL00C1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginIL00A1"
+        android:name="com.inbank.android_catalog.catalog.login.Login00A1Fragment"
+        android:label="fragment_title_screen"
+        tools:layout="@layout/fragment_il00a1" >
+        <action
+            android:id="@+id/action_loginIL00A1_to_loginIL00B1"
+            app:destination="@id/loginIL00B1"
+            app:popUpTo="@id/loginIL01A" />
+        <action
+            android:id="@+id/action_loginIL00A1_to_loginIL00C1"
+            app:destination="@id/loginIL00C1"
+            app:popUpTo="@id/loginIL01A" />
+        <action
+            android:id="@+id/action_loginIL00A1_to_loginILA04"
+            app:destination="@id/loginILA04" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginIL00B1"
+        android:name="com.inbank.android_catalog.catalog.login.Login00B1Fragment"
+        android:label="fragment_title_screen"
+        tools:layout="@layout/fragment_il00b1" >
+        <action
+            android:id="@+id/action_loginIL00B1_to_loginIL00A1"
+            app:destination="@id/loginIL00A1"
+            app:popUpTo="@id/loginIL01A" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginIL00C1"
+        android:name="com.inbank.android_catalog.catalog.login.Login00C1Fragment"
+        android:label="fragment_title_screen"
+        tools:layout="@layout/fragment_il00c1" >
+        <action
+            android:id="@+id/action_loginIL00C1_to_loginIL00A1"
+            app:destination="@id/loginIL00A1"
+            app:popUpTo="@id/loginIL01A" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginILA04"
+        android:name="com.inbank.android_catalog.catalog.login.LoginA04Fragment"
+        android:label="fragment_title_screen"
+        tools:layout="@layout/fragment_ila04" >
+
+        <action
+            android:id="@+id/action_loginILA04_to_loginILA10"
+            app:destination="@id/loginILA10" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginILA10"
+        android:name="com.inbank.android_catalog.catalog.login.LoginA10Fragment"
+        android:label="fragment_title_screen"
+        tools:layout="@layout/fragment_ila10" >
+
+        <action
+            android:id="@+id/action_loginILA10_to_loginILA13"
+            app:destination="@id/loginILA13" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginILA13"
+        android:name="com.inbank.android_catalog.catalog.login.LoginA13Fragment"
+        android:label="fragment_title_screen"
+        tools:layout="@layout/fragment_ila13" >
+
+    </fragment>
+
+</navigation>

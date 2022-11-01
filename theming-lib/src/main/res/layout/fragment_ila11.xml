@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_std"
+    android:focusableInTouchMode="true"
+    android:theme="@style/Theme.InBankMaterial">
+
+    <TextView
+        android:id="@+id/prompt"
+        style="@style/L.Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/prompt_margin_top"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="@string/create_pin_biometric_prompt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/codeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prompt">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/code"
+            style="@style/InbankMaterialTextInputEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/type_pin_placeholder"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="@integer/max_length_PIN"
+            android:text=""
+            android:theme="@style/InbankTextInputEditTextThemeOverride" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Impostato apposta il margin top a 16 perché è stato aggiunto il padding al TextInputLayout-->
+    <it.phoenixspa.inbank.theming.TitleM
+        android:id="@+id/header"
+        style="@style/M.Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/rules"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/codeLayout"
+        app:textTitle="@string/pin_security_rules_section_header" />
+
+    <TextView
+        android:id="@+id/rules"
+        style="@style/S.Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/pin_not_valid_rules"
+        android:textColor="@color/text_color_std"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        tools:text="Non sono ammessi codici PIN:\n• Con più di 2 cifre consecutive uguali\n• Con 5 cifre in sequenza (es. 12345 o 54321)" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/button_margin_left_right"
+        android:layout_marginTop="@dimen/default_button_margin_top"
+        android:layout_marginEnd="@dimen/button_margin_left_right"
+        android:text="@string/confirm_button"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rules" />
+
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/separator_height"
+        android:layout_marginTop="@dimen/default_button_margin_top"
+        android:background="@color/grigio_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/confirmButton" />
+
+    <TextView
+        android:id="@+id/lastChangeValue"
+        style="@style/S.Regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/separator"
+        tools:text="Ultimo cambio password: 10/10/2020\nUltimo cambio password: 10/10/2020 asdfdsaffads" />
+
+    <TextView
+        style="@style/XL.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="IL09"
+        tools:textColor="@android:color/black" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

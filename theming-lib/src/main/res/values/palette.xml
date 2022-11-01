@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- region Brand color-->
+    <color name="brandcolor_1">#005366</color>
+    <color name="brandcolor_2">#454545</color>
+    <color name="brandcolor_3">#0D8BA8</color>
+    <color name="brandcolor_4">#86C5D3</color>
+    <color name="brandcolor_5">#E6EDEF</color>
+    <!--endregion-->
+
+    <!-- region Grey tones-->
+    <color name="grigio_1">#454545</color>
+    <color name="grigio_2">#939394</color>
+    <color name="grigio_3">#C9C9C9</color>
+    <color name="grigio_4">#E4E4E4</color>
+    <color name="grigio_5">#F4F3F3</color>
+    <color name="grigio_6">#F9F9F9</color>
+    <!--endregion-->
+
+    <!-- region States color-->
+    <color name="positive">#52BD93</color>
+    <color name="alert">#F0B900</color>
+    <color name="negative">#CA4549</color>
+    <!--endregion-->
+
+    <!-- region Generic color-->
+    <color name="color_1">#649ECD</color>
+    <color name="color_2">#52BD71</color>
+    <color name="color_3">#F0B900</color>
+    <color name="color_4">#8C50A0</color>
+    <color name="color_5">#FF5050</color>
+    <color name="color_6">#F28E00</color>
+    <color name="color_7">#466EAA</color>
+    <color name="color_8">#50C8BE</color>
+    <color name="color_9">#3CB478</color>
+    <color name="color_10">#BE508C</color>
+    <color name="color_11">#E13C46</color>
+    <color name="color_12">#DCD232</color>
+    <color name="color_13">#8A582C</color>
+    <color name="color_14">#B7D66F</color>
+    <color name="color_15">#128689</color>
+    <color name="color_16">#F6A9BB</color>
+    <color name="color_17">#99ACC4</color>
+    <!--endregion-->
+
+    <!-- region Reverse color-->
+    <color name="reverse">#FFFFFF</color>
+    <!--endregion-->
+
+
+    <!-- colori da confermare -->
+
+    <!-- vedi https://jira.servizi.phoenixspa.it/jira/browse/IBKAPPAND-2299?focusedCommentId=79892&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-79892-->
+    <color name="fascia_in_fondo">#0D8BA8</color>
+
+    <!-- Attenzione! Colori del gradiente aggiunti per completezza -->
+    <!-- è necessario modificarli nel file ic_gradient_background_ -->
+    <color name="gradient_tutorial_down">#0D8BA8</color>
+    <color name="gradient_tutorial_up">#005366</color>
+
+
+    <color name="pallino_deselezionato">#86C5D3</color>
+    <color name="pallino_selezionato">#E6EDEF</color>
+
+
+    <!-- 50% del bianco (128/256) 0x80  -->
+    <color name="reverse_50">#80ffffff</color>
+    <!-- 74% del bianco 189/255 == 0xBD - cambiato in 26% (66/255) 0x42-->
+    <color name="reverse_74">#bdffffff</color>
+    <!-- 75% del bianco (191/255) 0xbf - cambiato in 25% (64/255) 0x40 -->
+    <color name="reverse_75">#bfffffff</color>
+
+    <!-- 20% del nero (51/255) 0x33 -->
+    <color name="black_20">#33000000</color>
+    <!-- 75% del nero (191/255) 0xbf - cambiato in 25% (64/255) 0x40 -->
+    <color name="widget_line_bottom">#40000000</color>
+
+    <!-- region Button 1-->
+    <!-- #52BD93 @color/success_color-->
+    <color name="normal_state_button_1">@color/positive</color>
+    <!-- colore calcolato, aggiunge il 20% del nero -->
+    <!-- Da sketch 65 151 117 #419775-->
+    <color name="highlighted_state_button1">#419775</color>
+    <!-- colore calcolato, aggiunge il 74% del bianco -->
+    <color name="disabled_state_button1">#d2ede2</color>
+    <!--  -->
+    <color name="ripple_state_button1">#102a1f</color>
+
+    <color name="text_enabled_button_1">@color/reverse</color>
+    <color name="text_disabled_button_1">@color/reverse</color>
+    <!-- endregion -->
+
+    <!-- region Button 2-->
+    <color name="normal_state_button_2">@color/brandcolor_1</color>
+    <!-- colore calcolato, aggiunge il 26% del nero -->
+    <!-- Da sketch 0 61 75 #003d4b-->
+    <color name="highlighted_state_button2">#003d4b</color>
+    <!-- colore calcolato, aggiunge il 74% del bianco -->
+    <color name="disabled_state_button2">#bcd2d7</color>
+    <!--  -->
+    <color name="ripple_state_button2">#000000</color>
+
+    <color name="text_enabled_button_2">@color/reverse</color>
+    <!-- 228 237 239 #e4edef -->
+    <color name="text_disabled_button_2">@color/reverse</color>
+    <!-- endregion -->
+
+    <!-- region Button 3-->
+    <!-- 0 83 102  #CA4549 -->
+    <color name="normal_state_button_3">@color/negative</color>
+    <!-- colore calcolato, aggiunge il 20% del nero -->
+    <!-- 161 55 58 #a1373a -->
+    <color name="highlighted_state_button3">#a1373a</color>
+    <!-- colore calcolato, aggiunge il 74% del bianco -->
+    <!-- 241 206 207 #f1cecf -->
+    <color name="disabled_state_button3">#f1cecf</color>
+    <!--   -->
+    <color name="ripple_state_button3">#2c0f0f</color>
+
+    <color name="text_enabled_button_3">@color/reverse</color>
+    <color name="text_highlighted_enabled_button_3">@color/reverse</color>
+    <!-- 249 235 235 #f9ebeb -->
+    <color name="text_disabled_button_3">@color/reverse</color>
+    <!-- endregion -->
+
+
+    <!-- region Button 4-->
+    <color name="normal_state_button_4">@color/reverse</color>
+    <!-- 0 83 102  #005366-->
+    <color name="highlighted_state_button4">@color/brandcolor_1</color>
+    <!--  -->
+    <color name="disabled_state_button4">@android:color/transparent</color>
+    <!--   -->
+    <color name="ripple_state_button4">@color/brandcolor_1</color>
+
+    <!-- 44 99 157 #2c639d-->
+    <color name="normal_stroke_state_button4">@color/highlighted_state_button4</color>
+
+    <color name="highlighted_stroke_state_button4">@color/highlighted_state_button4</color>
+    <!-- #2c639d al 26% -> 190 205 221 #becddd -->
+    <color name="disabled_stroke_state_button4">@color/disabled_state_button2</color>
+
+    <color name="normal_text_state_button_4">@color/normal_stroke_state_button4</color>
+    <color name="highlighted_text_state_button_4">@color/reverse</color>
+    <!-- 179 201 207 #b3c9cf -->
+    <color name="disabled_text_state_button_4">@color/disabled_state_button2</color>
+
+    <!-- endregion -->
+
+    <!-- region Button scrambled keyboard -->
+    <color name="scrambled_txt_enabled">@color/reverse</color>
+    <color name="scrambled_txt_disabled">#E5F5EE</color>
+
+    <color name="normal_state_button_scrambled">#4C4C4E</color>
+    <color name="highlighted_state_button_scrambled">#707072</color>
+    <color name="ripple_state_button_scrambled">#d6d6d8</color>
+    <!-- endregion -->
+
+    <color name="background_std">@color/reverse</color>
+
+</resources>

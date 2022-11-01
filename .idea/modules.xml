@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Inbank-Catalog-Android.iml" filepath="$PROJECT_DIR$/.idea/modules/Inbank-Catalog-Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android_catalog/Inbank-Catalog-Android.android_catalog.iml" filepath="$PROJECT_DIR$/.idea/modules/android_catalog/Inbank-Catalog-Android.android_catalog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android_catalog/Inbank-Catalog-Android.android_catalog.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/android_catalog/Inbank-Catalog-Android.android_catalog.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android_catalog/Inbank-Catalog-Android.android_catalog.main.iml" filepath="$PROJECT_DIR$/.idea/modules/android_catalog/Inbank-Catalog-Android.android_catalog.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android_catalog/Inbank-Catalog-Android.android_catalog.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/android_catalog/Inbank-Catalog-Android.android_catalog.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Inbank-Catalog-Android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Inbank-Catalog-Android.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Inbank-Catalog-Android.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Inbank-Catalog-Android.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Inbank-Catalog-Android.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Inbank-Catalog-Android.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Inbank-Catalog-Android.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Inbank-Catalog-Android.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/theming-lib/Inbank-Catalog-Android.theming-lib.iml" filepath="$PROJECT_DIR$/.idea/modules/theming-lib/Inbank-Catalog-Android.theming-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/theming-lib/Inbank-Catalog-Android.theming-lib.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/theming-lib/Inbank-Catalog-Android.theming-lib.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/theming-lib/Inbank-Catalog-Android.theming-lib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/theming-lib/Inbank-Catalog-Android.theming-lib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/theming-lib/Inbank-Catalog-Android.theming-lib.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/theming-lib/Inbank-Catalog-Android.theming-lib.unitTest.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/Theme.InBankMaterial">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pinLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="70dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pin"
+            style="@style/InbankMaterialTextInputEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/insert_pin_code_placeholder"
+            android:imeOptions="actionDone"
+            android:inputType="numberPassword"
+            android:maxLength="5"
+            android:text=""
+            android:theme="@style/InbankTextInputEditTextThemeOverride" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Impostato apposta il margin top a 10 perché è stato aggiunto il padding al TextInputLayout-->
+    <Button
+        android:id="@+id/enterButton"
+        style="@style/InbankPrimaryContainedButton_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/button_margin_left_right"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/button_margin_left_right"
+        android:text="@string/enter_login_button"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinLayout" />
+
+    <TextView
+        android:id="@+id/biometricLabel"
+        style="@style/M.Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="end"
+        android:text="@string/or_execute_biometric_access"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterButton" />
+
+    <ImageView
+        android:id="@+id/fingerprintImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_button_fingerprint_64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/biometricLabel" />
+
+    <TextView
+        android:id="@+id/loginWithUsrAndPwd"
+        style="@style/S.Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="@string/or_enter_with_usr_code_and_pwd"
+        android:textColor="@color/linkWebView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fingerprintImage" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

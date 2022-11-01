@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/tutorialThemeOverride"
+    tools:background="@drawable/ic_gradient_background_">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/welcome_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="56dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tutorialSeparator"
+        android:alpha="0.2"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/welcome_tab_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="6dp"
+        android:background="@android:color/transparent"
+        android:minHeight="@dimen/button_min_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
+        app:tabBackground="@drawable/tutorial_tab_indicator_default"
+        app:tabGravity="center"
+        app:tabIndicator="@drawable/tutorial_tab_indicator"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="@dimen/button_min_height"
+        app:tabPaddingEnd="8dp"
+        app:tabPaddingStart="8dp"
+        tools:background="@color/grigio_4"
+        tools:layout_width="80dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/welcome_activate"
+        style="@style/InbankCenterIconButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/activate_button"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/welcome_next"
+        style="@style/InbankCenterIconButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        app:icon="@drawable/ic_arrow_negative_40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

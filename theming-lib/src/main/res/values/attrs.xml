@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextWithSwitch">
+        <attr name="textTitle" format="string" />
+        <attr name="textSubtitle" format="string" />
+        <attr name="textStatus" format="string" />
+        <attr name="showSwitch" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="InfoNotify">
+        <attr name="textLabelFirstPart" format="string" />
+        <attr name="textLabelSecondPart" format="string" />
+        <attr name="src" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ListRow2StikersLeft">
+        <attr name="circleColor" format="color" />
+        <attr name="hideSubtitle" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PictureProfileView">
+        <attr name="showCircumference" format="boolean" />
+        <attr name="ticknessCircumference" format="dimension" />
+        <attr name="colorCircumference" format="color" />
+        <attr name="colorCircle" format="color" />
+        <attr name="textInside" format="string" />
+        <attr name="colorTextInside" format="color" />
+        <attr name="sizeTextInside" format="dimension" />
+    </declare-styleable>
+
+</resources>

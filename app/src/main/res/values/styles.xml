@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CatalogHeaderTitle" parent="M.Regular">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:textColor">@color/title_m</item>
+    </style>
+
+    <style name="ToggleButtonGrouped" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:paddingLeft">@dimen/mtrl_btn_text_btn_padding_left</item>
+        <item name="android:paddingRight">@dimen/mtrl_btn_text_btn_padding_right</item>
+        <item name="iconTint">@color/mtrl_text_btn_text_color_selector</item>
+        <item name="iconPadding">@dimen/mtrl_btn_text_btn_icon_padding</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="rippleColor">@color/mtrl_btn_text_btn_ripple_color</item>
+    </style>
+
+    <style name="CatalogCardShape" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+    </style>
+
+    <style name="CatalogCardShape.Single" parent="CatalogCardShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+    <style name="CatalogCard" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="contentPaddingLeft">16dp</item>
+        <item name="contentPaddingRight">16dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cornerSize">8dp</item>
+        <item name="shapeAppearance">@style/CatalogCardShape.Single</item>
+    </style>
+
+
+
+
+
+
+
+</resources>

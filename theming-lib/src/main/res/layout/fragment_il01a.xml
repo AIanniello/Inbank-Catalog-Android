@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_std"
+    android:theme="@style/Theme.InBankMaterial">
+
+    <TextView
+        android:id="@+id/privacyLabel"
+        style="@style/S.Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:paddingStart="16dp"
+        android:paddingTop="21dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="21dp"
+        android:text="@string/privacy_button"
+        android:textAllCaps="true"
+        android:textColor="@color/loginTextPrivacy"
+        app:layout_constraintBottom_toTopOf="@id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/logo_intro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/privacyLabel" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="27dp"
+        android:contentDescription=""
+        app:layout_constraintBottom_toTopOf="@+id/bottomSeparator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <it.phoenixspa.inbank.theming.ListRow2StikersLeft
+                android:id="@+id/user1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:circleColor="@color/color_1"
+                tools:visibility="visible" />
+
+            <it.phoenixspa.inbank.theming.ListRow2StikersLeft
+                android:id="@+id/user2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:circleColor="@color/color_2"
+                tools:visibility="visible" />
+
+            <it.phoenixspa.inbank.theming.ListRow2StikersLeft
+                android:id="@+id/user3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:circleColor="@color/color_3"
+                tools:visibility="visible" />
+
+            <it.phoenixspa.inbank.theming.ListRow2StikersLeft
+                android:id="@+id/user4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:circleColor="@color/color_4"
+                tools:hideSubtitle="true"
+                tools:textSubtitle="00002043"
+                tools:textTitle="Anna Maria Rossi"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/activateButton"
+        style="@style/InbankPrimaryTextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/il01a_new_profile"
+        android:textAllCaps="false"
+        android:textColor="@color/loginNewProfileText"
+        android:textSize="@dimen/text_small"
+        app:icon="@drawable/ic_add_var_24dp"
+        app:iconPadding="8dp"
+        app:iconTint="@color/loginNewProfileIcon"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottomSeparator" />
+
+    <View
+        android:id="@+id/bottomSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/separator_height"
+        android:layout_marginBottom="56dp"
+        android:background="@color/separator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent" />
+
+    <TextView
+        style="@style/XL.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="IL01A" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/footerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="bottomSeparator,activateButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

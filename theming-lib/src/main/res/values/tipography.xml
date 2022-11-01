@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance">
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="Typography" parent="TextAppearance">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="XL" parent="Typography">
+        <item name="android:textSize">@dimen/text_xlarge</item>
+    </style>
+
+<!--    TextAppearance.Inbank.Headline3-->
+    <style name="XL.Regular" parent="XL">
+    </style>
+
+<!-- TextAppearance.Inbank.Headline4-->
+    <style name="XL.Medium" parent="XL">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+
+    <style name="XL.Bold" parent="XL">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="L" parent="Typography">
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+
+    <!-- TextAppearance.Inbank.Headline5-->
+    <style name="L.Regular" parent="L">
+    </style>
+
+    <!-- TextAppearance.Inbank.Headline6-->
+    <style name="L.Medium" parent="L">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="L.Bold" parent="L">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="M" parent="Typography">
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="M.Regular" parent="M">
+    </style>
+
+    <style name="M.Bold" parent="M">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="S" parent="Typography">
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="S.Regular" parent="S">
+    </style>
+
+    <style name="S.Bold" parent="S">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Underlined.M" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:focusable">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ems">10</item>
+    </style>
+
+    <style name="SM" parent="Typography">
+        <item name="android:textSize">@dimen/text_sm</item>
+    </style>
+
+    <style name="SM.Regular" parent="SM">
+    </style>
+
+    <style name="SM.Bold" parent="SM">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

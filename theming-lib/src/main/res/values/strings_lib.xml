@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- region IL01 ??? -->
+    <string name="first_time_menu_activity_001">Se hai il codice personale e la password procedi con l’attivazione</string>
+    <string name="first_time_menu_activity_000">Attiva il tuo profilo</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <!-- endregion -->
+
+    <!-- region IL02 -->
+    <string name="activate_profile_title">Attiva profilo</string>
+    <string name="activate_profile_prompt">Inserisci le tue credenziali per procedere con l’attivazione</string>
+    <string name="need_help_button">Hai bisogno di aiuto?</string>
+    <string name="user_code_placeholder">Codice utente</string>
+    <string name="password_placeholder">Password</string>
+
+    <string name="confirm_button">Conferma</string>
+    <!-- endregion -->
+
+
+    <!-- region IL04 -->
+    <string name="profile_name_title">Nome profilo</string>
+    <string name="profile_name_prompt">Imposta un nome per questo<br/>profilo Inbank app</string>
+    <string name="profile_name_info">In questo modo potrai distinguerlo da altri profili salvati.</string>
+    <string name="profile_name_placeholder">es. Andrea</string>
+
+    <string name="continue_button">Continua</string>
+    <!-- endregion -->
+
+    <!-- region IL05 -->
+    <string name="confirmation_code_title">Codice di conferma</string>
+    <string name="confirmation_code_prompt">Conferma l\'operazione utilizzando<br/>il codice ricevuto via SMS</string>
+        <!-- inserire in abstract "Lables - Primo login" -->
+        <string name="confirmation_code_placeholder">Inserisci il codice di 5 cifre</string>
+    <string name="confirmation_code_expire_info">Scade tra</string>
+    <string name="confirmation_code_send_code_info">Invia codice</string>
+    <!-- Serve per Android ???-->
+    <string name="confirmation_code_paste_button">Incolla codice dagli appunti</string>
+    <!-- endregion -->
+
+    <!-- region IL06 -->
+    <string name="quick_access_title">Accesso rapido</string>
+    <string name="quick_access_biometric_prompt">Abilita l’accesso biometrico</string>
+    <string name="quick_access_touch_face_id_info_title">Potrai accedere a Inbank app in sicurezza, senza digitare la password.</string>
+    <string name="quick_access_touch_face_id_info_subtitle">Dovrai impostare anche un codice PIN da usare come metodo alternativo.</string>
+    <string name="not_now_button">Non ora</string>
+    <!-- endregion -->
+
+    <!-- region IL07 -->
+    <!-- <string name="quick_access_title">Accesso rapido</string> -->
+    <string name="quick_access_pin_prompt">Abilita l’accesso rapido con codice PIN</string>
+    <string name="quick_access_pin_info_title">Potrai accedere con un codice di 5 cifre, senza digitare la password.</string>
+    <!-- endregion -->
+
+    <!-- region IL08 -->
+    <string name="pin_title">Codice PIN</string>
+    <string name="insert_pin_prompt">Inserisci il tuo codice PIN per abilitare l\'accesso rapido</string>
+    <string name="insert_pin_placeholder">PIN di 5 cifre</string>
+    <string name="forget_pin_button">Hai dimenticato il codice PIN? Creane uno nuovo</string>
+    <!-- endregion -->
+
+    <!-- region IL09 -->
+    <!-- <string name="pin_title">Codice PIN</string> -->
+    <string name="create_pin_biometric_prompt">Crea un codice PIN per abilitare l\'accesso biometrico</string>
+    <string name="type_pin_placeholder">PIN di 5 cifre</string>
+    <string name="pin_security_rules_section_header">Criteri di Sicurezza</string>
+    <string name="pin_not_valid_rules">Non sono ammessi codici PIN:</string>
+    <!-- endregion -->
+
+    <!-- region IL10 -->
+    <!-- <string name="pin_title">Codice PIN</string> -->
+    <string name="retype_pin_prompt">Ripeti nuovamente il codice PIN</string>
+    <string name="retype_pin_placeholder">PIN di 5 cifre</string>
+
+    <!-- endregion -->
+
+    <!-- region IL11 -->
+    <!-- <string name="quick_access_title">Accesso rapido</string> -->
+    <string name="activate_biometric_prompt">Il codice PIN è stato impostato, attiva subito l’accesso biometrico</string>
+    <string name="activate_biometric_title">Potrai attivare l’accesso biometrico anche in seguito dal menu laterale.</string>
+    <string name="activate_now_button">Attiva subito</string>
+    <!-- endregion -->
+
+    <!-- region IL11 Dialog/Popup -->
+    <string name="biometric_access_dialog_title">Accesso biometrico</string>
+    <string name="biometric_access_dialog_subtitle">Verifica la tua impronta</string>
+    <string name="biometric_access_dialog_hint">Tocca il sensore dell\'impronta digitale</string>
+    <string name="cancel_button">Annulla</string>
+    <!-- endregion -->
+
+    <!-- region IL12 -->
+    <string name="change_password_title">Password</string>
+    <string name="change_password_new_password_section_header">Nuova password</string>
+    <string name="change_password_security_score">Livello di sicurezza:</string>
+    <string name="change_password_new_password_placeholder">Scegli una password</string>
+    <string name="change_password_verify_password_section_header">Verifica password</string>
+    <string name="change_password_verify_password_placeholder">Ripeti la nuova password</string>
+    <string name="change_password_unmatching_passwords">Le password non corrispondono</string>
+    <!-- endregion -->
+
+    <!-- region IL13 -->
+    <string name="security_alerts_prompt">Ricevi avvisi al numero %1$s</string>
+    <string name="security_alerts_inbank_access">Accessi a Inbank</string>
+    <string name="security_alerts_inbank_access_info">Ricevi un avviso per ogni accesso Inbank effettuato da web o app</string>
+    <string name="security_alerts_inbank_payments">Pagamenti tramite Inbank</string>
+    <string name="security_alerts_inbank_payments_status_enabled">Abilitati</string>
+    <string name="security_alerts_inbank_payments_status_disabled">Disabilitati</string>
+    <string name="security_alerts_inbank_payments_info_with_limit">Ricevi un avviso all’esecuzione di bonifici, ricariche prepagate e bollettini postali superiori a € %1$s (per modificare contatta la Banca)</string>
+    <string name="security_alerts_inbank_payments_info_without_limit">Ricevi un avviso all’esecuzione di bonifici, ricariche prepagate e bollettini postali (per modificare contatta la Banca)</string>
+    <string name="security_alerts_info_footer_first_part">Gli SMS potrebbero essere a pagamento:</string>
+    <string name="security_alerts_info_footer_second_part">con l’app Inbank notify potrai riceverli gratuitamente</string>
+    <!-- endregion-->
+
+    <!-- region IL14 -->
+    <string name="security_phrase_title">Frase di sicurezza</string>
+    <string name="security_phrase_prompt">Crea una frase di sicurezza per concludere l’attivazione</string>
+    <string name="security_phrase_info">Dovrai inserirla per verificare la tua identità se modificherai la tua password.</string>
+    <string name="security_phrase_placeholder">Frase di almeno 8 caratteri</string>
+    <string name="forward_button">Avanti</string>
+    <!-- endregion-->
+
+    <!-- region IL15 -->
+    <string name="activation_completed_title">Attivazione completata</string>
+    <string name="activation_completed_prompt">È tutto pronto</string>
+    <string name="activation_completed_info">Ora puoi entrare in banca quando vuoi, ovunque tu sia.</string>
+    <string name="start_button">Inizia</string>
+    <string name="download_notify_footer_title">Scarica Inbank notify</string>
+    <string name="download_notify_footer_description">Gestisci la sicurezza del tuo conto e ricevi gli avvisi gratis.</string>
+    <string name="download_button">Scarica</string>
+    <!-- endregion-->
+
+    <!-- region IL01A -->
+    <string name="privacy_button">Privacy</string>
+    <string name="il01a_new_profile">Aggiungi un nuovo profilo</string>
+    <string name="il01a_image_content_description">Immagine profilo %1$s</string>
+    <!-- endregion-->
+
+    <!-- region IL00A1 -->
+    <string name="or_enter_with_pin_code_button">oppure accedi con codice PIN</string>
+    <string name="enter_login_button">Accedi</string>
+    <!-- endregion -->
+
+    <!-- region IL00A2 -->
+    <!-- <string name="or_enter_with_pin_code_button">oppure accedi con codice PIN</string>-->
+    <string name="login_usr_pwd_prompt">Accedi con codice utente e password</string>
+    <!-- endregion -->
+
+    <!-- region IL00B1 -->
+    <string name="insert_pin_code_placeholder">Inserisci il codice PIN</string>
+    <string name="enter_with_pin_code_button">Accedi</string>
+    <string name="or_enter_with_usr_code_and_pwd">oppure accedi con codice utente e password</string>
+    <!-- endregion -->
+
+    <!-- region IL00B2 -->
+    <string name="enter_with_pin_code_prompt">Accedi con codice PIN</string>
+    <!-- endregion -->
+
+    <!-- region IL00C1 -->
+    <string name="or_execute_biometric_access">o esegui l’accesso biometrico</string>
+    <!-- endregion -->
+
+    <!-- region IL00C2 -->
+    <string name="enter_the_inbank_app">Accedi a Inbank app</string>
+    <!-- endregion -->
+
+
+
+    <!-- region ILA04 -->
+    <string name="pin_code_inserted_successfully_prompt">Il codice PIN è stato impostato correttamente.</string>
+    <string name="pin_code_inserted_successfully_info">Ti verrà richiesto al prossimo accesso. Potrai modificare il codice PIN appena impostato o cambiare il metodo di accesso dal menu laterale.</string>
+    <string name="end_button">Fine</string>
+    <!-- endregion -->
+
+    <!-- region ILA10 -->
+    <string name="biometric_access_activated_correctly_prompt">L’accesso biometrico è stato attivato correttamente</string>
+    <!-- endregion -->
+
+    <!-- region ILA13 -->
+    <!--    pin_code_inserted_successfully_prompt-->
+    <!--    ila04_info-->
+    <!-- endregion -->
+
+    <!-- region welcome (tutorial) -->
+    <string name="welcome_privacy_button">Privacy policy</string>
+    <string name="activate_button">Attiva</string>
+    <string name="contentdescription_imageview">immagine</string>
+    <string name="it01_welcome_body">Dimentica vincoli di orario o luogo ed entra in banca con il tuo telefono quando vuoi, ovunque tu sia.</string>
+    <string name="it01_welcome_text">Benvenuto in Inbank</string>
+    <string name="it02_welcome_body">Gestisci il conto corrente e le carte direttamente dal tuo smartphone, pagando in sicurezza e tranquillità.</string>
+    <string name="it02_welcome_text">Quando e dove vuoi tu</string>
+    <string name="it03_welcome_body">Imposta avvisi personalizzati, consulta i movimenti del tuo conto, i documenti e le comunicazioni.</string>
+    <string name="it03_welcome_text">Facile e immediato</string>
+    <string name="it04_welcome_body">Con Inbank planner tieni d’occhio le tue spese grazie alle categorie assegnate in automatico ai movimenti.</string>
+    <string name="it04_welcome_text">Controllo delle spese</string>
+    <!-- endregion-->
+
+    <!--  region ila05-->
+    <!--    <string name="quick_access_biometric_prompt">Abilita l’accesso biometrico</string>-->
+    <!--    <string name="quick_access_touch_face_id_info_title">Potrai accedere a Inbank app in sicurezza, senza digitare la password.</string>-->
+    <!--    <string name="quick_access_touch_face_id_info_subtitle">Dovrai impostare anche un codice PIN da usare come metodo alternativo.</string>-->
+    <!-- endregion-->
+
+    <!-- region alertDialog -->
+    <string name="crashReport_descHint">Descrivi il problema</string>
+    <string name="crashReport_desc1">L\'app si è chiusa in modo anomalo, verrà inviata una segnalazione per risolvere il problema. Acconsenti anche l\'invio del tuo codice utente?</string>
+    <!-- endregion-->
+
+    <!-- region fragment_disable_pin_01 -->
+    <string name="disable_rapid_pin_ab_title">Disabilita PIN rapido</string>
+    <string name="disable_pin_fragment_001">Disabilitando il PIN rapido, al prossimo accesso all\'app ti verrà richiesto di inserire il codice utente e la password</string>
+    <string name="disable_pin_fragment_002">Disabilita</string>
+    <!-- endregion-->
+
+    <!-- region fragment_disable_pin_02 -->
+    <string name="disable_rapid_pin_confirm_ab_title">PIN rapido disabilitato</string>
+    <string name="disable_pin_fragment_006">Il PIN rapido è stato disattivato correttamente. Al prossimo accesso ti verrà richiesto di inserire il codice personale e la password.</string>
+    <string name="disable_pin_fragment_007">Potrai impostare nuovamente il PIN rapido dal menù impostazioni</string>
+    <!-- <string name="end_button">Fine</string> -->
+    <!-- endregion-->
+
+    <!-- region fingerprint disable start -->
+    <string name="activity_fingerprint_manager_disable">Accesso biometrico</string>
+    <string name="fingerprint_disable_title">Vuoi disattivare l\'accesso tramite riconoscimento biometrico?</string>
+    <string name="fingerprint_disable_start">Disattivando l\'accesso tramite riconoscimento biometrico potrai accedere con il PIN rapido.</string>
+    <string name="fingerprint_disable">Disattiva</string>
+    <!-- endregion-->
+
+    <!-- region fingerprint disable end -->
+    <string name="fingerprint_disable_confirm_ab_title">Accesso biometrico disattivato</string>
+    <string name="fingerprint_disable_success">L\'accesso biometrico è stato disabilitato correttamente. Potrai riabilitarlo nuovamente dal menù laterale.</string>
+    <!-- <string name="end_button">Fine</string> -->
+    <!-- endregion-->
+
+</resources>

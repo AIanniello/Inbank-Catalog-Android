@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- region Dimensione caratteri -->
+    <dimen name="text_xlarge">40sp</dimen>
+    <dimen name="text_large">24sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_sm">14sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <!-- endregion -->
+
+    <dimen name="button_min_width">128dp</dimen>
+    <dimen name="button_min_height">48dp</dimen>
+    <dimen name="button_padding_top">14dp</dimen>
+    <dimen name="button_padding_bottom">15dp</dimen>
+    <dimen name="button_padding">16dp</dimen>
+    <dimen name="button_padding_left">@dimen/button_padding</dimen>
+    <dimen name="button_padding_right">@dimen/button_padding</dimen>
+
+    <dimen name="button_icon_padding">8dp</dimen>
+    <dimen name="button_icon_min_height">48dp</dimen>
+    <dimen name="button_icon_min_width">48dp</dimen>
+
+
+    <!-- Attenzione!!! se si cambia questo valore bisogna ricalcolare il colore di ripple
+    @dimen/mtrl_high_ripple_pressed_alpha 0.24 o 0.48?
+    -->
+    <item format="float" name="ripple_pressed_alpha_button_1" type="dimen">0.26</item>
+    <item format="float" name="ripple_pressed_alpha_button_2" type="dimen">@dimen/ripple_pressed_alpha_button_1</item>
+    <item format="float" name="ripple_pressed_alpha_button_3" type="dimen">@dimen/ripple_pressed_alpha_button_1</item>
+    <item format="float" name="ripple_pressed_alpha_button_4" type="dimen">1.0</item>
+    <item format="float" name="ripple_pressed_alpha_button_scrambled" type="dimen">@dimen/ripple_pressed_alpha_button_1</item>
+
+    <dimen name="button_margin_left_right">38dp</dimen>
+    <dimen name="default_button_margin_top">40dp</dimen>
+
+
+    <dimen name="separator_height">1dp</dimen>
+
+    <dimen name="prompt_margin_top">29dp</dimen>
+    <integer name="max_length_PIN">5</integer>
+
+    <!-- SCRAMBLED KEYBOARD -->
+    <dimen name="scrambled_key_text">22sp</dimen>
+    <dimen name="scrambled_internal_spacing">1px</dimen>
+
+    <!-- serve per evitare che altri pulsanti si sovrappongano alla tastiera-->
+    <dimen name="scrambled_elevation">8dp</dimen>
+    <!-- END SCRAMBLED KEYBOARD -->
+</resources>

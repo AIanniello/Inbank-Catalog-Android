@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_std"
+    android:theme="@style/Theme.InBankMaterial">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/footerText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/prompt"
+                style="@style/L.Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/prompt_margin_top"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                tools:text="@string/security_alerts_prompt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <it.phoenixspa.inbank.theming.TextWithSwitch
+                android:id="@+id/textSwitch1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prompt"
+                app:textSubtitle="@string/security_alerts_inbank_access_info"
+                app:textTitle="@string/security_alerts_inbank_access" />
+
+            <it.phoenixspa.inbank.theming.TextWithSwitch
+                android:id="@+id/textSwitch2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSwitch1"
+                app:showSwitch="false"
+                app:textStatus="@string/security_alerts_inbank_payments_status_enabled"
+                app:textSubtitle="@string/security_alerts_inbank_payments_info_with_limit"
+                app:textTitle="@string/security_alerts_inbank_payments" />
+
+            <Button
+                android:id="@+id/continueButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/button_margin_left_right"
+                android:layout_marginTop="@dimen/default_button_margin_top"
+                android:layout_marginEnd="@dimen/button_margin_left_right"
+                android:layout_marginBottom="24dp"
+                android:text="@string/continue_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSwitch2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <it.phoenixspa.inbank.theming.InfoNotify
+        android:id="@+id/footerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nestedScrollView"
+        app:src="@drawable/ic_info_24dp"
+        app:textLabelFirstPart="@string/security_alerts_info_footer_first_part"
+        app:textLabelSecondPart="@string/security_alerts_info_footer_second_part"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/XL.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="IL13"
+        tools:textColor="@android:color/black" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

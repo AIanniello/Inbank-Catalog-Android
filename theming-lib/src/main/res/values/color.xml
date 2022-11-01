@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <color name="circle_background">@color/brandcolor_1</color>
+
+    <!-- #A5C8E8 colore trovato su Inbank-Components-Android list/row/2/stickers left -->
+    <!-- modifico a color_1 -->
+    <color name="circle_background2">@color/color_1</color>
+
+    <color name="linkWebView">@color/brandcolor_1</color>
+
+    <color name="title_m">@color/brandcolor_1</color>
+
+    <color name="tra_profits_losses_line_chart_gray">@color/grigio_2</color>
+
+    <color name="change_password_bar_background">@color/grigio_4</color>
+
+
+    <color name="separator">@color/grigio_4</color>
+
+    <color name="maskImageView_border">@color/brandcolor_1</color>
+
+    <color name="boxStrokeColor">@color/brandcolor_1</color>
+
+    <color name="alertDialogColorButtons">@color/brandcolor_1</color>
+
+    <color name="tutorialSeparator">@color/grigio_4</color>
+
+    <color name="text_color_std">@color/grigio_1</color>
+
+    <color name="helpLogin">@color/brandcolor_1</color>
+
+    <color name="InbankSwitchThumbColor">@color/brandcolor_1</color>
+
+    <color name="textInputEditTextCursor">@color/brandcolor_1</color>
+    <color name="textInputEditTextSelections">@color/brandcolor_1</color>
+
+    <color name="loginTextPrivacy">@color/brandcolor_1</color>
+
+    <color name="loginNewProfileText">@color/brandcolor_1</color>
+    <color name="loginNewProfileIcon">@color/brandcolor_1</color>
+
+    <!-- Colore aggiunto per differenziare le personalizzate-->
+    <color name="loginTitleText">@color/text_color_std</color>
+
+</resources>

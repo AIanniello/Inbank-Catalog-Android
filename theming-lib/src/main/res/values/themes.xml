@@ -1,0 +1,282 @@
+<resources>
+
+    <style name="Theme.InBankMaterial" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/image_splash</item>
+
+        <item name="android:colorControlActivated">@color/brandcolor_1</item>
+        <item name="textInputStyle">@style/InbankMaterialTextField</item>
+        <item name="materialButtonStyle">@style/InbankPrimaryContainedButton_1</item>
+
+        <item name="colorPrimary">@color/brandcolor_1</item>
+
+        <!-- setta anche il colore della statusbar-->
+        <item name="colorPrimaryDark">@android:color/black</item>
+
+        <item name="colorSecondary">@color/brandcolor_1</item>
+
+
+        <item name="materialAlertDialogTheme">@style/AlertDialogTheme</item>
+        <!--<item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog</item>-->
+
+        <!-- stile del BiometricPrompt-->
+        <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+
+        <item name="colorSurface">@color/reverse</item>
+        <item name="colorOnSurface">@color/grigio_1</item>
+
+        <!-- region TextAppearance-->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.Inbank.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.Inbank.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/XL.Regular</item>
+        <item name="textAppearanceHeadline4">@style/XL.Medium</item>
+        <item name="textAppearanceHeadline5">@style/L.Regular</item>
+        <item name="textAppearanceHeadline6">@style/L.Medium</item>
+        <item name="textAppearanceSubtitle1">@style/M.Regular</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.Inbank.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.Inbank.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.Inbank.Body2</item>
+        <item name="textAppearanceCaption">@style/S.Regular</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Inbank.Button</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.Inbank.Overline</item>
+        <!-- endregion-->
+
+        <item name="android:textColor">@color/text_color_std</item>
+        <item name="android:editTextColor">@color/text_color_std</item>
+
+
+        <!-- vedi https://material.io/components/switches/android#theming-switches -->
+        <item name="switchStyle">@style/Theme.InbankMaterial.Widget.App.Switch</item>
+
+<!--        <item name="colorSurface">@color/colorSurface</item>-->
+<!--        <item name="colorOnSurface">@color/colorOnSurface</item>-->
+
+
+    </style>
+
+
+    <style name="Theme.InBankMaterial.AppBarOverlay" parent="@style/Theme.InBankMaterial.Toolbar" />
+
+    <style name="Theme.InBankMaterial.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="Theme.InBankMaterial.Toolbar" parent="@style/ThemeOverlay.MaterialComponents.Light">
+        <!--colore bottone burgher (pulsante up)-->
+        <item name="colorControlNormal">@color/reverse</item>
+        <!--colore testo actionbar-->
+        <item name="android:textColorPrimary">@color/reverse</item>
+
+        <!-- colore hint per la searchView-->
+        <item name="android:textColorHint">@color/reverse_50</item>
+    </style>
+
+    <style name="InbankContainedButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">@dimen/button_min_width</item>
+        <item name="android:minHeight">@dimen/button_min_height</item>
+        <item name="android:paddingLeft">@dimen/button_padding_left</item>
+        <item name="android:paddingRight">@dimen/button_padding_right</item>
+        <item name="android:paddingBottom">@dimen/button_padding_bottom</item>
+        <item name="android:paddingTop">@dimen/button_padding_top</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">0dp</item>
+    </style>
+
+    <style name="InbankPrimaryContainedButton_1" parent="InbankContainedButton">
+        <item name="backgroundTint">@color/background_button_1</item>
+        <item name="android:textColor">@color/text_button_1</item>
+        <item name="rippleColor">@color/ripple_button_1</item>
+    </style>
+
+    <style name="InbankPrimaryContainedButton_2" parent="InbankContainedButton">
+        <item name="backgroundTint">@color/background_button_2</item>
+        <item name="android:textColor">@color/text_button_2</item>
+        <item name="rippleColor">@color/ripple_button_2</item>
+    </style>
+
+    <style name="InbankPrimaryContainedButton_3" parent="InbankContainedButton">
+        <item name="backgroundTint">@color/background_button_3</item>
+        <item name="android:textColor">@color/text_button_3</item>
+        <item name="rippleColor">@color/ripple_button_3</item>
+    </style>
+
+    <style name="InbankOutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">@dimen/button_min_width</item>
+        <item name="android:minHeight">@dimen/button_min_height</item>
+        <item name="android:paddingLeft">@dimen/button_padding_left</item>
+        <item name="android:paddingRight">@dimen/button_padding_right</item>
+        <item name="android:paddingBottom">@dimen/button_padding_bottom</item>
+        <item name="android:paddingTop">@dimen/button_padding_top</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">0dp</item>
+    </style>
+
+    <style name="InbankPrimaryContainedButton_4" parent="InbankOutlinedButton">
+        <item name="android:backgroundTint">@color/background_button_4</item>
+        <item name="android:textColor">@color/text_button_4</item>
+        <item name="rippleColor">@color/ripple_button_4</item>
+        <item name="strokeColor">@color/stroke_button_4</item>
+    </style>
+
+    <style name="InbankCenterIconButtonStyle" parent="@style/Widget.MaterialComponents.Button.TextButton">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">@dimen/button_icon_min_width</item>
+        <item name="android:minHeight">@dimen/button_icon_min_height</item>
+        <item name="android:paddingLeft">@dimen/button_icon_padding</item>
+        <item name="android:paddingRight">@dimen/button_icon_padding</item>
+        <item name="android:paddingBottom">@dimen/button_icon_padding</item>
+        <item name="android:paddingTop">@dimen/button_icon_padding</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="iconGravity">textEnd</item>
+        <item name="iconPadding">0dp</item>
+    </style>
+
+
+    <style name="InbankPrimaryTextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:gravity">center</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="iconPadding">0dp</item>
+        <item name="android:backgroundTint">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/brandcolor_1</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="InbankPrimaryTextButton.Icon" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:gravity">center</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="iconPadding">0dp</item>
+        <item name="android:backgroundTint">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/brandcolor_1</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.005</item>
+    </style>
+
+    <style name="buttonStyledScrambled" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:backgroundTint">@color/background_button_scrambled</item>
+        <item name="rippleColor">@color/ripple_button_scrambled</item>
+        <item name="android:textColor">@drawable/scrambled_btn_txt_selector</item>
+        <item name="android:textSize">@dimen/scrambled_key_text</item>
+        <item name="shapeAppearanceOverlay">@style/scrambledShapeAppearance</item>
+    </style>
+
+    <style name="scrambledShapeAppearance">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="InbankMaterialTextField" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+        <item name="android:layout_height">48dp</item>
+
+        <item name="boxBackgroundMode">filled</item>
+        <item name="boxBackgroundColor">@color/background_std</item>
+
+        <item name="android:textSize">@dimen/text_medium</item>
+
+        <!-- Riguarda solo il floating hint solo se l'hint è settato sull'EditText (non sul layout) -->
+        <item name="hintEnabled">false</item>
+        <!-- Di default preferiamo una sola linea -->
+        <item name="android:maxLines">1</item>
+
+        <!-- necessario per differenziare ChiantiBanca-->
+        <item name="boxStrokeColor">@color/boxStrokeColor</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+
+    <style name="InbankMaterialTextField.password" parent="InbankMaterialTextField">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="endIconMode">password_toggle</item>
+        <item name="endIconDrawable">@drawable/ic_eye_selector</item>
+        <item name="endIconTint">@null</item>
+
+    </style>
+
+    <style name="InbankMaterialTextInputEditTextStyle" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColorHint">@color/grigio_2</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <!-- Serve per poter rimuovere il pannello bianco che sarebbe dell'hint-->
+        <item name="android:paddingTop">12dp</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <!-- Colore sfondo (default bianco)-->
+        <!-- <item name="colorSurface">@color/reverse</item> -->
+
+        <!-- necessario per differenziare ChiantiBanca-->
+        <item name="colorPrimary">@color/alertDialogColorButtons</item>
+        
+        <item name="materialAlertDialogTitleTextStyle">@style/InbankMaterialAlertDialog.App.Title.Text</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/InbankMaterialAlertDialog.App.Body.Text</item>
+        <item name="materialButtonStyle">@style/InbankAlertDialogButton</item>
+    </style>
+
+    <style name="InbankMaterialAlertDialog.App.Title.Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/text_color_std</item>
+    </style>
+
+    <style name="InbankMaterialAlertDialog.App.Body.Text" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textColor">@color/text_color_std</item>
+    </style>
+
+    <style name="InbankAlertDialogButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.InbankMaterial.Widget.App.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="materialThemeOverlay">@style/Theme.InbankMaterial.ThemeOverlay.App.Switch</item>
+    </style>
+
+    <style name="Theme.InbankMaterial.ThemeOverlay.App.Switch" parent="">
+        <item name="colorSecondary">@color/InbankSwitchThumbColor</item>
+    </style>
+
+    <style name="InbankTextInputEditTextThemeOverride">
+        <!-- Colore del cursore-->
+        <item name="colorControlActivated">@color/textInputEditTextCursor</item>
+        <item name="android:colorControlActivated">@color/textInputEditTextCursor</item>
+        <!-- colore del background del testo selezionato-->
+        <item name="colorSecondary">@color/textInputEditTextSelections</item>
+    </style>
+
+    <style name="tutorialThemeOverride" >
+        <item name="colorPrimary">@color/reverse</item>
+        <item name="android:textColor">@color/reverse</item>
+        <item name="colorOnSurface">@color/brandcolor_4</item>
+    </style>
+
+    <style name="allitudeTextInputLayoutStyle" >
+        <!-- Serve per rimuovere il colore della tinta automatico-->
+        <item name="startIconTint">@null</item>
+    </style>
+
+
+</resources>

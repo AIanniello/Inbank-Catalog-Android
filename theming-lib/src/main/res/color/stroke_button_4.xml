@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--    <item android:state_enabled="false" android:color="@color/disabled_state_button3" />-->
+<!--    <item android:color="@color/normal_state_button_4" android:state_checked="true"/>-->
+<!--    <item android:color="@android:color/transparent" android:state_checked="false"/>-->
+<!--</selector>-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false"
+        android:color="@color/disabled_stroke_state_button4"  />
+    <item
+        android:state_enabled="true"
+        android:state_window_focused="false"
+        android:color="@color/normal_stroke_state_button4"/>
+
+    <item
+        android:state_enabled="true"
+        android:state_window_focused="true"
+        android:color="@color/normal_stroke_state_button4"/>
+    <item
+        android:state_enabled="true"
+        android:state_pressed="true"
+        android:color="@color/highlighted_stroke_state_button4"/>
+</selector>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/disablePinHome"
+    app:startDestination="@id/disable_pin_01">
+
+    <fragment
+        android:id="@+id/disable_pin_01"
+        android:name="com.inbank.android_catalog.catalog.pin.disable.PinDisableFragment"
+        android:label="@string/disable_rapid_pin_ab_title"
+        tools:layout="@layout/fragment_disable_pin_01">
+
+        <action
+            android:id="@+id/action_disable_pin_01_to_disable_pin_02"
+            app:destination="@id/disable_pin_02" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/disable_pin_02"
+        android:name="com.inbank.android_catalog.catalog.pin.disable.PinDisableCompleteFragment"
+        android:label="@string/disable_rapid_pin_confirm_ab_title"
+        tools:layout="@layout/fragment_disable_pin_02" />
+
+</navigation>

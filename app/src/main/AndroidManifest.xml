@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="it.phoenixspa.inbank.catalog">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="InbankCatalog"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InBankMaterial">
+        <activity
+            android:name=".TextPlusThemeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CatalogButtonsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CatalogTextInput"
+            android:exported="false" />
+        <activity
+            android:name=".CatalogTypography"
+            android:exported="false" />
+        <activity
+            android:name=".CatalogPaletteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firstlogin.FirstLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".welcome.WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".alertdialog.AlertDialogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pin.disable.PinDisableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fingerprint.disable.FingerprintDisableActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

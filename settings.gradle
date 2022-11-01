@@ -1,0 +1,4 @@
+include ':theming-lib'
+include ':app'
+rootProject.name = "Inbank-Catalog-Android"
+include ':android_catalog'

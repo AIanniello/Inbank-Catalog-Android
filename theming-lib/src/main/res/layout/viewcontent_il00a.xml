@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/Theme.InBankMaterial">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userLayout"
+        style="@style/allitudeTextInputLayoutStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="16dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_code_24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/user"
+            style="@style/InbankMaterialTextInputEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_code_placeholder"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="8"
+            android:nextFocusDown="@id/password"
+            android:text=""
+            android:theme="@style/InbankTextInputEditTextThemeOverride" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Impostato apposta il margin top a 2 perché è stato aggiunto il padding al TextInputLayout-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pwdLayout"
+        style="@style/allitudeTextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userLayout"
+        app:startIconDrawable="@drawable/ic_lock_24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            style="@style/InbankMaterialTextInputEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_placeholder"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword|textNoSuggestions"
+            android:text=""
+            android:theme="@style/InbankTextInputEditTextThemeOverride" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/needHelpLabel"
+        style="@style/S.Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical|end"
+        android:text="@string/need_help_button"
+        android:textColor="@color/helpLogin"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pwdLayout" />
+
+    <Button
+        android:id="@+id/enterButton"
+        style="@style/InbankPrimaryContainedButton_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/button_margin_left_right"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="@dimen/button_margin_left_right"
+        android:text="@string/enter_login_button"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/needHelpLabel" />
+
+    <TextView
+        android:id="@+id/loginWithPIN"
+        style="@style/S.Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="@string/or_enter_with_pin_code_button"
+        android:textColor="@color/linkWebView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

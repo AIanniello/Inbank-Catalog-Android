@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/disableFingerprintHome"
+    app:startDestination="@id/disable_fingerprint_01">
+
+    <fragment
+        android:id="@+id/disable_fingerprint_01"
+        android:name="com.inbank.android_catalog.catalog.fingerprint.disable.FingerprintDisableStartFragment"
+        android:label="@string/activity_fingerprint_manager_disable"
+        tools:layout="@layout/fragment_disable_pin_01">
+
+        <action
+            android:id="@+id/action_disable_fingerprint_01_to_disable_fingerprint_02"
+            app:destination="@id/disable_fingerprint_02"
+            app:popUpTo="@id/disableFingerprintHome"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/disable_fingerprint_02"
+        android:name="com.inbank.android_catalog.catalog.fingerprint.disable.FingerprintDisableSuccessFragment"
+        android:label="@string/fingerprint_disable_confirm_ab_title"
+        tools:layout="@layout/fragment_disable_pin_02" />
+
+</navigation>

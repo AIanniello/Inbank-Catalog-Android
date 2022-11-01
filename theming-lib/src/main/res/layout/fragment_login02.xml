@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_std"
+    android:theme="@style/Theme.InBankMaterial">
+
+    <TextView
+        android:id="@+id/prompt"
+        style="@style/L.Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/prompt_margin_top"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="@string/activate_profile_prompt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userLayout"
+        style="@style/allitudeTextInputLayoutStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="16dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prompt"
+        app:startIconDrawable="@drawable/ic_code_24dp" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/user"
+            style="@style/InbankMaterialTextInputEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_code_placeholder"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="8"
+            android:nextFocusDown="@id/password"
+            android:text=""
+            android:theme="@style/InbankTextInputEditTextThemeOverride" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Impostato apposta il margin top a 2 perché è stato aggiunto il padding al TextInputLayout-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pwdLayout"
+        style="@style/allitudeTextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userLayout"
+        app:startIconDrawable="@drawable/ic_lock_24dp" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            style="@style/InbankMaterialTextInputEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_placeholder"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword|textNoSuggestions"
+            android:text=""
+            android:theme="@style/InbankTextInputEditTextThemeOverride" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/needHelpLabel"
+        style="@style/S.Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical|end"
+        android:minHeight="48dp"
+        android:text="@string/need_help_button"
+        android:textColor="@color/helpLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pwdLayout" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        style="@style/InbankPrimaryContainedButton_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/button_margin_left_right"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="@dimen/button_margin_left_right"
+        android:text="@string/confirm_button"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwdLayout" />
+
+    <TextView
+        style="@style/XL.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="IL02" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

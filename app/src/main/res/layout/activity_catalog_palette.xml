@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_std"
+    tools:context=".CatalogTextInput">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.InBankMaterial.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.InBankMaterial.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/CatalogHeaderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/palette_brand_color" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <androidx.constraintlayout.helper.widget.Flow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:constraint_referenced_ids="bcolor1,bcolor2,bcolor3,bcolor4,bcolor5"
+                    app:flow_horizontalAlign="start"
+                    app:flow_horizontalGap="8dp"
+                    app:flow_maxElementsWrap="3"
+                    app:flow_verticalAlign="top"
+                    app:flow_verticalGap="16dp"
+                    app:flow_wrapMode="aligned"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/bcolor1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/brandcolor_1"
+                    app:textSubtitle="#005366"
+                    app:textTitle="Brandcolor-1" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/bcolor2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    app:colorSquare="@color/brandcolor_2"
+                    app:textSubtitle="#454545"
+                    app:textTitle="Brandcolor-2" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/bcolor3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    app:colorSquare="@color/brandcolor_3"
+                    app:textSubtitle="#0D8BA8"
+                    app:textTitle="Brandcolor-3" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/bcolor4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    app:colorSquare="@color/brandcolor_4"
+                    app:textSubtitle="#86C5D3"
+                    app:textTitle="Brandcolor-4" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/bcolor5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    app:colorSquare="@color/brandcolor_5"
+                    app:textSubtitle="#E6EDEF"
+                    app:textTitle="Brandcolor-5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                style="@style/CatalogHeaderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/palette_gray_tones" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp">
+
+                <androidx.constraintlayout.helper.widget.Flow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:constraint_referenced_ids="color3,color4,color5,color6,color7,color8"
+                    app:flow_horizontalAlign="start"
+                    app:flow_horizontalGap="8dp"
+                    app:flow_maxElementsWrap="3"
+                    app:flow_verticalAlign="top"
+                    app:flow_verticalGap="16dp"
+                    app:flow_wrapMode="aligned"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/grigio_1"
+                    app:textSubtitle="#454545"
+                    app:textTitle="Grigio-1" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/grigio_2"
+                    app:textSubtitle="#939394"
+                    app:textTitle="Grigio-2" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/grigio_3"
+                    app:textSubtitle="#C9C9C9"
+                    app:textTitle="Grigio-3" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/grigio_4"
+                    app:textSubtitle="#E4E4E4"
+                    app:textTitle="Grigio-4" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/grigio_5"
+                    app:textSubtitle="#F4F3F3"
+                    app:textTitle="Grigio-5" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/grigio_6"
+                    app:textSubtitle="#F9F9F9"
+                    app:textTitle="Grigio-6" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                style="@style/CatalogHeaderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/palette_states_colors" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp">
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:colorSquare="@color/positive"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:textSubtitle="#52BD93"
+                    app:textTitle="Positive" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    app:colorSquare="@color/alert"
+                    app:layout_constraintStart_toEndOf="@id/color9"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:textSubtitle="#F0B900"
+                    app:textTitle="Color-3 / Alert" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    app:colorSquare="@color/negative"
+                    app:layout_constraintStart_toEndOf="@id/color10"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:textSubtitle="#CA4549"
+                    app:textTitle="Negative" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                style="@style/CatalogHeaderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/palette_generic_colors" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp">
+
+                <androidx.constraintlayout.helper.widget.Flow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="color12,color13,color14,color15,color16,color17,color18,color19,color20,color21,color22,color23,color24,color25,color26,color27,color28,color29"
+                    app:flow_horizontalAlign="start"
+                    app:flow_horizontalGap="8dp"
+                    app:flow_maxElementsWrap="3"
+                    app:flow_verticalAlign="top"
+                    app:flow_verticalGap="16dp"
+                    app:flow_wrapMode="aligned"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/color_1"
+                    app:textSubtitle="#649ECD"
+                    app:textTitle="Color-1" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/color_2"
+                    app:textSubtitle="#52BD71"
+                    app:textTitle="Color-2" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/color_3"
+                    app:textSubtitle="#F0B900"
+                    app:textTitle="Color-3" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/color_4"
+                    app:textSubtitle="#8C50A0"
+                    app:textTitle="Color-4" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/color_5"
+                    app:textSubtitle="#FF5050"
+                    app:textTitle="Color-5" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/color_6"
+                    app:textSubtitle="#F28E00"
+                    app:textTitle="Color-6" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/color_7"
+                    app:textSubtitle="#466EAA"
+                    app:textTitle="Color-7" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/color_8"
+                    app:textSubtitle="#50C8BE"
+                    app:textTitle="Color-8" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/color_9"
+                    app:textSubtitle="#3CB478"
+                    app:textTitle="Color-9" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/color_10"
+                    app:textSubtitle="#BE508C"
+                    app:textTitle="Color-10" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/color_11"
+                    app:textSubtitle="#E13C46"
+                    app:textTitle="Color-11" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/color_12"
+                    app:textSubtitle="#DCD232"
+                    app:textTitle="Color-12" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/color_13"
+                    app:textSubtitle="#8A582C"
+                    app:textTitle="Color-13" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/color_14"
+                    app:textSubtitle="#B7D66F"
+                    app:textTitle="Color-14" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/color_15"
+                    app:textSubtitle="#128689"
+                    app:textTitle="Color-15" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/color_16"
+                    app:textSubtitle="#F6A9BB"
+                    app:textTitle="Color-16" />
+
+                <com.inbank.android_catalog.catalog.CardColor
+                    android:id="@+id/color28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorSquare="@color/color_17"
+                    app:textSubtitle="#99ACC4"
+                    app:textTitle="Color-17" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                style="@style/CatalogHeaderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/palette_reverse_colors" />
+
+            <com.inbank.android_catalog.catalog.CardColor
+                android:id="@+id/color30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:colorSquare="@color/reverse"
+                app:textSubtitle="#FFFFFF"
+                app:textTitle="reverse" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

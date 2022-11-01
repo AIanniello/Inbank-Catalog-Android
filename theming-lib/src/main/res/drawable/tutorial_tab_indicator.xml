@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:innerRadius="0dp"
+            android:shape="ring"
+            android:thickness="4dp"
+            android:useLevel="false">
+            <!-- utilizzato come colore abilitato -->
+            <solid android:color="?attr/colorPrimary" />
+            <size android:height="2dp" />
+        </shape>
+    </item>
+</selector>
