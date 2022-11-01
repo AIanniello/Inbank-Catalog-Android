@@ -46,8 +46,7 @@ afterEvaluate {
     publishing{
         publications{
             release(MavenPublication){
-                from components.release
-
+                from components.debug
                 groupId = 'com.gitbub.AIanniello'
                 version = '1.0'
             }
