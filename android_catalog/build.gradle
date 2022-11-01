@@ -45,10 +45,23 @@ dependencies {
 afterEvaluate {
     publishing{
         publications{
-            release(MavenPublication){
-                from components.debug
+            release(MavenPublication) {
+                // Applies the component for the release build variant.
+                from components.release
+
+                // You can then customize attributes of the publication as shown below.
                 groupId = 'com.gitbub.AIanniello'
-                version = '1.0'
+                artifactId = 'inbank-material-lib'
+                version = '1.0.1'
+            }
+            debug(MavenPublication) {
+                // Applies the component for the release build variant.
+                from components.debug
+
+                // You can then customize attributes of the publication as shown below.
+                groupId = 'com.gitbub.AIanniello'
+                artifactId = 'inbank-material-lib-debug'
+                version = '1.0.1'
             }
         }
     }
